@@ -6,8 +6,8 @@ import { ProfileHome } from './Components/ProfileHome';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <ProfileHome></ProfileHome>
+      <Navbar/>
+      <ProfileHome/>
     </div>
   );
 }
