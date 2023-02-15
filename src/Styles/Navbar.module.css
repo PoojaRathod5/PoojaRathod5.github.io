@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    position: fixed;
+    width: 100%;
+    background-color: lightcyan;
+    margin-top: 0px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+}
+li{
+    margin-right: 0.5rem;
+}
