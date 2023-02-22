@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.029ea304.css",
-    "main.js": "/static/js/main.e7761997.js",
+    "main.js": "/static/js/main.ff4ad0d4.js",
     "static/js/787.8e8e6802.chunk.js": "/static/js/787.8e8e6802.chunk.js",
     "static/media/Pooja_Rathod_Resume.pdf": "/static/media/Pooja_Rathod_Resume.2037a31fdd097ccdf52b.pdf",
     "static/media/profile.jpg": "/static/media/profile.c0162a73095d0870117a.jpg",
@@ -9,11 +9,11 @@
     "static/media/Logo_for_white_bg.png": "/static/media/Logo_for_white_bg.34983fc8cdb1798c53e9.png",
     "index.html": "/index.html",
     "main.029ea304.css.map": "/static/css/main.029ea304.css.map",
-    "main.e7761997.js.map": "/static/js/main.e7761997.js.map",
+    "main.ff4ad0d4.js.map": "/static/js/main.ff4ad0d4.js.map",
     "787.8e8e6802.chunk.js.map": "/static/js/787.8e8e6802.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.029ea304.css",
-    "static/js/main.e7761997.js"
+    "static/js/main.ff4ad0d4.js"
   ]
 }
