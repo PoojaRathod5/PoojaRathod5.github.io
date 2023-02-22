@@ -24,13 +24,13 @@ const About = () => {
       <Image width="80%" className="home-img"  margin="auto" border="2px solid grey" borderRadius="10%" src={myImage}/>
      </Box>
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
-       <Box alignItems="center" >
-       <Text id="user-detail-intro" >
+       <Box alignItems="center" id="#about" >
+       <Text id="#user-detail-intro" >
               Hey, My name is Pooja Rathod. I have completed my Bachelor of
               Engineering from Deogiri College of Engineering, Auranhabad,Maharashtra.
               <br />
               <br />
-              Currently, I have expertise in C, C++, HTML, CSS, JavaScript, React and TypeScript. 
+              Currently, I have expertise in MERN,C, C++, HTML, CSS, JavaScript, React, MongoDB and TypeScript. 
               I also have knowledge of SQL. Apart from programming, I enjoy reading 📚,
                photography 📸, listening to music 🎵
               and Shopping.
@@ -45,4 +45,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
