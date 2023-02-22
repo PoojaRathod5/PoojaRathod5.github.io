@@ -8,7 +8,7 @@ import {
   Link
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 // import Sidebar from "./Sidebar";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
