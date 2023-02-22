@@ -13,7 +13,7 @@ import {
 const About = () => {
   return (
     <>
-   <Text fontSize="4xl" fontWeight="600"   id="#about" className="about section"  margin="auto" textAlign="center" >About me</Text>
+   <Text fontSize="4xl" fontWeight="600"   id="about" className="about section"  margin="auto" textAlign="center" >About me</Text>
     <Flex 
     height="65vh"
     //border="1px solid red"
@@ -24,9 +24,9 @@ const About = () => {
       <Image width="80%" className="home-img"  margin="auto" border="2px solid grey" borderRadius="10%" src={myImage}/>
      </Box>
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
-       <Box alignItems="center"  >
+       <Box alignItems="center" id="#about" >
         
-       <p id="#user-detail-intro" >
+       <Text id="#user-detail-intro" >
               Hey, My name is Pooja Rathod. I have completed my Bachelor of
               Engineering from Deogiri College of Engineering, Auranhabad,Maharashtra.
               <br />
@@ -38,7 +38,7 @@ const About = () => {
               <br />
               <br />
              Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. Looking forward to joining a progressive organization with opportunities to work on challenging projects.
-          </p>
+          </Text>
        </Box>
       </Box>
     </Flex>
