@@ -25,15 +25,16 @@ const Projects = () => {
       github: "https://github.com/PoojaRathod5/new-bucket-3441",
       demo: "https://celestial-bubble-1320-cjzn.vercel.app/"
     },
+   
     {
       id: 1,
 
-      name: "Farfetch Website (Clone)",
-      description: "It is my Second project",
-      image: "https://i.ibb.co/8MMLNdW/Farfetch.png",
+      name: "TimeCamp website (Clone)",
+      description: "It is my javasript project",
+      image: "https://i.ibb.co/jgCFshg/Screenshot-528.png",
       techStack: ["HTML", "CSS", "Javascript"],
-      github: "https://github.com/PoojaRathod5/animated-governor-4742",
-      demo: "https://tubular-semifreddo-2ed46b.netlify.app/"
+      github: "https://github.com/MrVivek30/violet-support-6758",
+      demo: "https://timecampp.netlify.app/"
     },
     {
       id: 1,

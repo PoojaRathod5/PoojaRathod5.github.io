@@ -82,7 +82,7 @@ const Skills = () => {
   return (
     <>
     <Text fontSize="4xl" fontWeight="600"  margin="auto" textAlign="center" >Tech Stacks</Text>
-    <Box id='skills' height="70vh" border="1px solid gray" width="80%" margin="auto">
+    <Box id='skills' className="#user-detail-intro" height="70vh" border="1px solid gray" width="80%" margin="auto" >
 
         <Box display="grid" gridTemplateColumns="repeat(7,1fr)">
             {
