@@ -72,6 +72,11 @@ const Skills = () => {
             id: 14,
             name: "Tailwindcss",
             image: "https://img.icons8.com/color/1x/tailwindcss.png",
+          },
+          {
+            id: 14,
+            name: "Tailwindcss",
+            image: "https://img.icons8.com/color/1x/tailwindcss.png",
           }
     ]
   return (

@@ -15,7 +15,7 @@ import {
   import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
   import Typewriter from "typewriter-effect";
   import style from "../Styles/Home.module.css"
-  //import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf"
+  import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
 
 
   // import img from "./userPic.png";
@@ -72,8 +72,8 @@ import {
           Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. 
           </Text>
           <Flex gap={"8"} align="center">
-            {/* <a id="resume-link-2" target="_blank" 
-            href={Kaustubh_Nawade_Resume} 
+            <a id="resume-link-2" target="_blank" 
+            href={Pooja_Rathod_Resume} 
             download
              >
               <Button
@@ -86,7 +86,7 @@ import {
                   <AiOutlineDownload fontSize={"1.2rem"} />
                 </Text>
               </Button>
-            </a> */}
+            </a>
             <Flex gap="3">
               <Link id="contact-linkedin" href='https://www.linkedin.com/in/pooja-rathod-9a133323b/' isExternal>
                 <ImLinkedin fontSize={"1.6rem"} />

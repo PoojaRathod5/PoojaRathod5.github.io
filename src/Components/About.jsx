@@ -15,12 +15,12 @@ const About = () => {
     <>
    <Text fontSize="4xl" fontWeight="600"   id="about" className="about section"  margin="auto" textAlign="center" >About me</Text>
     <Flex 
-    height="55vh"
-    border="1px solid red"
+    height="65vh"
+    //border="1px solid red"
     width="85%"
     margin="auto"
     >    
-     <Box width="35%" padding="20px">
+     <Box width="35%" padding="20px" >
       <Image width="80%" className="home-img"  margin="auto" border="2px solid grey" borderRadius="10%" src={myImage}/>
      </Box>
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
