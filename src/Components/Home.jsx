@@ -76,16 +76,30 @@ import {
             href={Pooja_Rathod_Resume} 
             download
              >
-              <Button
-                width="max-content"
-                colorScheme={"teal"}
-                id="resume-button-2"
+               <Button
+              width="max-content"
+              colorScheme={"teal"}
+              id="resume-button-1"
+              className="nav-link resume"
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
+                  "_blank"
+                );
+              }}
+            >
+              <a
+                id="resume-link-1"
+                href={Pooja_Rathod_Resume}
+                target="_blank"
+                download="Pooja_Rathod_Resume.pdf"
               >
                 Resume
-                <Text as="span" ml={"2"}>
-                  <AiOutlineDownload fontSize={"1.2rem"} />
-                </Text>
-              </Button>
+              </a>
+              <Text as="span" ml={"2"}>
+                <AiOutlineDownload fontSize={"1.2rem"} />
+              </Text>
+            </Button>
             </a>
             <Flex gap="3">
               <Link id="contact-linkedin" href='https://www.linkedin.com/in/pooja-rathod-9a133323b/' isExternal>

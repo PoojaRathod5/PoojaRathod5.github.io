@@ -13,8 +13,6 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
-import Logo1 from "../assets/Logo_for_white_bg.png";
-import Logo2 from "../assets/Logo_for_black_bg.png";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -75,11 +73,25 @@ const Navbar = () => {
             </Link>
             <a id="resume-link-1" target="_blank" href={Pooja_Rathod_Resume} download>
             <Button
-              className="nav-link resume"
+              width="max-content"
               colorScheme={"teal"}
               id="resume-button-1"
+              className="nav-link resume"
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
+                  "_blank"
+                );
+              }}
             >
-              Resume
+              <a
+                id="resume-link-1"
+                href={Pooja_Rathod_Resume}
+                target="_blank"
+                download="Pooja_Rathod_Resume.pdf"
+              >
+                Resume
+              </a>
               <Text as="span" ml={"2"}>
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>

@@ -1,0 +1,8 @@
+.skillsContainer:hover{
+    background-color: rgb(10, 161, 154);
+    /* background-color: rgb(11, 129, 123); */
+    color: white;
+}
+.skillscardimg{
+    width: 100%;
+}
