@@ -164,7 +164,7 @@ const Skills = () => {
       id: 7,
       name: "MongoDB",
       image:
-        "https://cdn.iconscout.com/icon/free/png-512/mongodb-3-1175138.png?f=avif&w=256",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZRwT3TUV4nSOVLN43q1Zc6H4vBE8JC4XhB_5E8rXs2n8sRY2G0ZieHbCY3c98UegSII&usqp=CAU",
     },
     {
       id: 8,
