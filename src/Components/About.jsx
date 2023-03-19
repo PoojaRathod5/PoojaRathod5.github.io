@@ -26,7 +26,7 @@ const About = () => {
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
        <Box alignItems="center" id="#about" >
         
-       <Text id="#user-detail-intro" >
+       <Text id="user-detail-intro" >
               Hey, My name is Pooja Rathod. I have completed my Bachelor of
               Engineering from Deogiri College of Engineering, Auranhabad,Maharashtra.
               <br />
