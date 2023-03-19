@@ -18,7 +18,7 @@ import {
   import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
 
 
-  // import img from "./userPic.png";
+
   const Home = () => {
     return (
       <>
@@ -68,15 +68,11 @@ import {
             }}
           />
           
-          <Text  id="user-detail-intro">
+          <Text>
           Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. 
           </Text>
           <Flex gap={"8"} align="center">
-            <a id="resume-link-2" target="_blank" 
-            href={Pooja_Rathod_Resume} 
-            download
-             >
-               <Button
+          <Button
               width="max-content"
               colorScheme={"teal"}
               id="resume-button-1"
@@ -100,7 +96,6 @@ import {
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>
             </Button>
-            </a>
             <Flex gap="3">
               <Link id="contact-linkedin" href='https://www.linkedin.com/in/pooja-rathod-9a133323b/' isExternal>
                 <ImLinkedin fontSize={"1.6rem"} />

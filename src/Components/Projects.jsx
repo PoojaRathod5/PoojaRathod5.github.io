@@ -16,7 +16,7 @@ const Projects = () => {
       demo: "https://netmed-lokesh-alok-ashish-akash-pooja.netlify.app/"
     },
     {
-      id: 1,
+      id: 2,
 
       name: "Infinity Jewellers website (Clone)",
       description: "It is my react project",
@@ -27,7 +27,7 @@ const Projects = () => {
     },
    
     {
-      id: 1,
+      id: 3,
 
       name: "TimeCamp website (Clone)",
       description: "It is my javasript project",
@@ -37,7 +37,7 @@ const Projects = () => {
       demo: "https://timecampp.netlify.app/"
     },
     {
-      id: 1,
+      id: 3,
 
       name: "TimeCamp website (Clone)",
       description: "It is my javasript project",
@@ -45,6 +45,16 @@ const Projects = () => {
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/MrVivek30/violet-support-6758",
       demo: "https://timecampp.netlify.app/"
+    },
+    {
+      id: 4,
+
+      name: "Paytm website (Clone)",
+      description: "It is my React project",
+      image: "https://i.ibb.co/Mf410yR/Screenshot-542.png",
+      techStack: ["HTML", "CSS", "React"],
+      github: "https://github.com/PoojaRathod5/assorted-dinner-745",
+      demo: "https://universalmall.vercel.app/"
     },
 
 
@@ -54,7 +64,7 @@ const Projects = () => {
   return (
     <>
       <Text id="projects" fontSize="4xl" fontWeight="600" margin="auto" textAlign="center" >Projects</Text>
-      <Box height="120vh"
+      <Box height="90vh"
         //border="1px solid yellow"
         display="grid"
         width="80%"

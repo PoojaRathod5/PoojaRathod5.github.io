@@ -25,7 +25,7 @@ const Navbar = () => {
           <title>{`Pooja Rathod | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" pos={"sticky"} top="0" textTransform={"capitalize"} background="#b0bec5"   >
+      <Box id="nav-menu" zIndex="7"  pos={"sticky"} top="0" textTransform={"capitalize"} background="#b0bec5"   >
         <Flex
           justify={"space-between"}
           height="4rem"
@@ -71,7 +71,6 @@ const Navbar = () => {
             <Link onClick={() => setTitle("Contact")} href="#contact" className="nav-link contact">
               contact
             </Link>
-            <a id="resume-link-1" target="_blank" href={Pooja_Rathod_Resume} download>
             <Button
               width="max-content"
               colorScheme={"teal"}
@@ -96,7 +95,6 @@ const Navbar = () => {
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>
             </Button>
-            </a>
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
