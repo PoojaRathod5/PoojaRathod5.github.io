@@ -219,7 +219,7 @@ const Skills = () => {
                   padding={{ base: "10px", md: "20px", lg: "40px" }}
                   height="auto"
                 >
-                  <Image className={styles.skillscardimg} src={el.image} />
+                  <Image className="skills-card-img" src={el.image} />
                   <Text className="skills-card-name">{el.name}</Text>
                 </Box>
               );
