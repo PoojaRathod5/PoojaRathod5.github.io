@@ -75,7 +75,7 @@ import {
           <Button
               width="max-content"
               colorScheme={"teal"}
-              id="resume-button-1"
+              id="resume-button-2"
               className="nav-link resume"
               onClick={() => {
                 window.open(
