@@ -201,7 +201,7 @@ const Skills = () => {
                   height="auto"
                   className="skills-card"
                 >
-                  <Image className={styles.skills-card-img} src={el.image} />
+                  <Image className="skills-card-img" src={el.image} />
                   <Text className="skills-card-name">{el.name}</Text>
                 </Box>
               );
