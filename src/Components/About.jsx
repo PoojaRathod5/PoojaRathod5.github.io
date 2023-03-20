@@ -5,7 +5,11 @@ import myImage from "../assets/profile.jpg"
 
 const About = () => {
   return (
-    <>
+    <Box 
+    id="about"
+        className="about section"
+    
+    >
       <Text fontSize="4xl" fontWeight="600" margin="auto" textAlign="center">
         About me
       </Text>
@@ -54,7 +58,7 @@ const About = () => {
           </Text>
         </Box>
       </Flex>
-    </>
+    </Box>
   );
 };
 
