@@ -199,8 +199,9 @@ const Skills = () => {
                   textAlign={"center"}
                   padding={{ base: "10px", md: "20px", lg: "40px" }}
                   height="auto"
+                  className="skills-card"
                 >
-                  <Image className={styles.skillscardimg} src={el.image} />
+                  <Image className={styles.skills-card-img} src={el.image} />
                   <Text className="skills-card-name">{el.name}</Text>
                 </Box>
               );
