@@ -4,19 +4,21 @@ import {
   Flex,
   Image,
   Text,
-  useColorMode,
-  Link
+  useColorMode
 } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 // import Sidebar from "./Sidebar";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
+import { useScrollPosition } from "react-use-scroll-position";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [title, setTitle] = useState("Home");
+  
 
   return (
     <>
@@ -25,7 +27,7 @@ const Navbar = () => {
           <title>{`Pooja Rathod | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" zIndex="7"  pos={"sticky"} top="0" textTransform={"capitalize"} background="#b0bec5"   >
+      <Box id="nav-menu" zIndex="9999"  pos={"fixed"} top="0" left = "0" right = "0" textTransform={"capitalize"} background="#b0bec5"   >
         <Flex
           justify={"space-between"}
           height="4rem"
@@ -34,7 +36,12 @@ const Navbar = () => {
         >
 
           <Box height="3.5rem" marginLeft={{ base: "10px", lg: "5rem" }} >
-            <Link href="#">
+            <Link to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("Home")}
+              className="nav-link home">
               <Image
                 src={
                   colorMode === "dark"
@@ -55,20 +62,64 @@ const Navbar = () => {
             marginRight="2rem"
             //border="1px solid red"
           >
-            <Link onClick={() => setTitle("Home")} href="#home" className="nav-link home">
+            <Link 
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("Home")}
+              activeClass="active"
+              className="nav-link home"
+              // onClick={() => setTitle("Home")} href="#home" className="nav-link home"
+            >
               home
             </Link>
-            <Link onClick={() => setTitle("About")} href="#about" className="nav-link about" >
+            <Link 
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("About")}
+              activeClass="active"
+              className="nav-link about"
+              //onClick={() => setTitle("About")} href="#about" className="nav-link about" 
+              >
               about
             </Link>
-            <Link onClick={() => setTitle("Skills")} href="#skills" className="nav-link skills"
+            <Link 
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("Skills")}
+              activeClass="active"
+              className="nav-link skills"
+              //onClick={() => setTitle("Skills")} href="#skills" className="nav-link skills"
             >
               skills
             </Link>
-            <Link onClick={() => setTitle("Projects")} href="#projects" className="nav-link projects">
+            <Link 
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("Projects")}
+              activeClass="active"
+              className="nav-link projects"
+              //onClick={() => setTitle("Projects")} href="#projects" className="nav-link projects"
+              >
               projects
             </Link>
-            <Link onClick={() => setTitle("Contact")} href="#contact" className="nav-link contact">
+            <Link 
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setTitle("Contact")}
+              activeClass="active"
+              className="nav-link contact"
+              //onClick={() => setTitle("Contact")} href="#contact" className="nav-link contact"
+            >
               contact
             </Link>
             <Button
@@ -81,16 +132,21 @@ const Navbar = () => {
                   "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
                   "_blank"
                 );
+                const link = document.createElement("a");
+                link.setAttribute("id","resume-link-1");
+                link.href = Pooja_Rathod_Resume;
+                link.download = "Pooja_Rathod_Resume.pdf";
+                link.click();
               }}
             >
-              <a
+              {/* <a
                 id="resume-link-1"
                 href={Pooja_Rathod_Resume}
                 target="_blank"
                 download="Pooja_Rathod_Resume.pdf"
-              >
+              > */}
                 Resume
-              </a>
+              {/* </a> */}
               <Text as="span" ml={"2"}>
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>

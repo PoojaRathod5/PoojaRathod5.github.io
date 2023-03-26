@@ -82,16 +82,21 @@ import {
                   "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
                   "_blank"
                 );
+                const link = document.createElement("a");
+                link.setAttribute("id","resume-link-2");
+                link.href = Pooja_Rathod_Resume;
+                link.download = "Pooja_Rathod_Resume.pdf";
+                link.click();
               }}
             >
-              <a
+              {/* <a
                 id="resume-link-1"
                 href={Pooja_Rathod_Resume}
                 target="_blank"
                 download="Pooja_Rathod_Resume.pdf"
-              >
+              > */}
                 Resume
-              </a>
+              {/* </a> */}
               <Text as="span" ml={"2"}>
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>
@@ -113,7 +118,6 @@ import {
               <span>
                 <BsMouse fontSize={"1.4rem"} />
               </span>
-              <Text>scroll down</Text>
               <span>
                 <AiOutlineArrowDown />
               </span>

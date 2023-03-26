@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./skills.module.css";
+import { Element } from "react-scroll";
 
 const Skills = () => {
   var settings = {
@@ -83,32 +84,32 @@ const Skills = () => {
     {
       id: 1,
       name: "HTML",
-      image: "https://img.icons8.com/color/1x/html-5.png",
+      image: "https://img.icons8.com/color/256/html-5.png",
     },
     {
       id: 2,
       name: "CSS",
-      image: "https://img.icons8.com/color/1x/css3.png",
+      image: "https://img.icons8.com/color/256/css3.png",
     },
     {
       id: 3,
       name: "Javascript",
-      image: "https://img.icons8.com/color/1x/javascript.png",
+      image: "https://img.icons8.com/color/256/javascript.png",
     },
     {
       id: 4,
       name: "React",
-      image: "https://img.icons8.com/color/1x/react-native.png",
+      image: "https://img.icons8.com/color/256/react-native.png",
     },
     {
       id: 5,
       name: "Redux",
-      image: "https://img.icons8.com/color/1x/redux.png",
+      image: "https://img.icons8.com/color/256/redux.png",
     },
     {
       id: 6,
       name: "Chakra UI",
-      image: "https://img.icons8.com/color/1x/chakra-ui.png",
+      image: "https://img.icons8.com/color/256/chakra-ui.png",
     },
     {
       id: 7,
@@ -117,11 +118,6 @@ const Skills = () => {
     },
     {
       id: 8,
-      name: "tailwind",
-      image: "https://img.icons8.com/color/256/tailwindcss.png",
-    },
-    {
-      id: 9,
       name: "Github",
       image: "https://img.icons8.com/bubbles/256/github.png",
     },
@@ -131,7 +127,7 @@ const Skills = () => {
     {
       id: 1,
       name: "Node.js",
-      image: "https://img.icons8.com/color/1x/nodejs.png",
+      image: "https://img.icons8.com/color/256/nodejs.png",
     },
     {
       id: 2,
@@ -140,94 +136,91 @@ const Skills = () => {
     },
     {
       id: 3,
-      name: "Firebase",
-      image: "https://img.icons8.com/color/256/firebase.png",
-    },
-    {
-      id: 4,
       name: "Netlify",
       image:
         "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
     },
     {
-      id: 5,
+      id: 4,
       name: "Mongoose",
       image: "https://img.icons8.com/color/256/mongoose.png",
     },
     {
-      id: 6,
+      id: 5,
       name: "Git",
       image: "https://img.icons8.com/color/256/git.png",
     },
 
     {
-      id: 7,
+      id: 6,
       name: "MongoDB",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZRwT3TUV4nSOVLN43q1Zc6H4vBE8JC4XhB_5E8rXs2n8sRY2G0ZieHbCY3c98UegSII&usqp=CAU",
     },
     {
-      id: 8,
+      id: 7,
       name: "npm",
       image: "https://img.icons8.com/color/256/npm.png",
     },
     {
-      id: 9,
+      id: 8,
       name: "Vercel",
       image: "https://cdn.worldvectorlogo.com/logos/vercel.svg",
     },
   ];
   return (
     <>
-      <Text
-        fontSize="4xl"
-        fontWeight="600"
-        margin="auto"
-        textAlign="center"
-        marginTop={{ base: "30px", md: "20px", lg: "50px" }}
-      >
-        Tech Stacks
-      </Text>
-      <Box id="skills" height={["45vh", "40vh", "60vh"]}>
-        <Box className="mainContainer" marginTop={"20px"}>
-          <Slider {...settings}>
-            {Skills.map((el) => {
-              return (
-                <Box
-                  key={el.id}
-                  alignItems={"center"}
-                  textAlign={"center"}
-                  padding={{ base: "10px", md: "20px", lg: "40px" }}
-                  height="auto"
-                  className="skills-card"
-                >
-                  <Image className="skills-card-img" src={el.image} />
-                  <Text className="skills-card-name">{el.name}</Text>
-                </Box>
-              );
-            })}
-          </Slider>
-        </Box>
+      <Element name="skills" className="element">
+        <Text
+          fontSize="4xl"
+          fontWeight="600"
+          margin="auto"
+          textAlign="center"
+          marginTop={{ base: "30px", md: "20px", lg: "60px" }}
+        >
+          Tech Stacks
+        </Text>
+        <Box id="skills" minHeight={["45vh", "40vh", "80vh"]} >
+          <Box className="mainContainer" marginTop={{ base: "30px", md: "40px", lg: "50px" }}>
+            <Slider {...settings}>
+              {Skills.map((el) => {
+                return (
+                  <Box
+                    key={el.id}
+                    alignItems={"center"}
+                    textAlign={"center"}
+                    padding={{ base: "10px", md: "20px", lg: "40px" }}
+                    height="auto"
+                    className="skills-card"
+                  >
+                    <Image className="skills-card-img" src={el.image} />
+                    <Text className="skills-card-name">{el.name}</Text>
+                  </Box>
+                );
+              })}
+            </Slider>
+          </Box>
 
-        <Box className="mainContainer" marginTop={"10px"}>
-          <Slider {...settings1}>
-            {backEndSkills.map((el) => {
-              return (
-                <Box
-                  key={el.id}
-                  alignItems={"center"}
-                  textAlign={"center"}
-                  padding={{ base: "10px", md: "20px", lg: "40px" }}
-                  height="auto"
-                >
-                  <Image className="skills-card-img" src={el.image} />
-                  <Text className="skills-card-name">{el.name}</Text>
-                </Box>
-              );
-            })}
-          </Slider>
+          <Box className="mainContainer" marginTop={{ base: "30px", md: "20px", lg: "50px" }}>
+            <Slider {...settings1}>
+              {backEndSkills.map((el) => {
+                return (
+                  <Box
+                    key={el.id}
+                    alignItems={"center"}
+                    textAlign={"center"}
+                    padding={{ base: "10px", md: "20px", lg: "40px" }}
+                    height="auto"
+                  >
+                    <Image className="skills-card-img" src={el.image} />
+                    <Text className="skills-card-name">{el.name}</Text>
+                  </Box>
+                );
+              })}
+            </Slider>
+          </Box>
         </Box>
-      </Box>
+      </Element>
     </>
   );
 };

@@ -1,156 +1,186 @@
+import React from "react";
+import { BsFillTelephoneFill, BsGithub } from "react-icons/bs";
+import { MdAttachEmail } from "react-icons/md";
+import { ImLinkedin } from "react-icons/im";
+import { FaHome } from "react-icons/fa";
+import { Box, Flex, SimpleGrid, Text, } from "@chakra-ui/react";
+import { RiMailSendFill } from "react-icons/ri";
+import { Input, InputGroup, InputLeftElement, } from '@chakra-ui/react'
 import {
-    Container,
-    Flex,
-    Box,
-    Heading,
-    Text,
-    IconButton,
-    Button,
-    VStack,
-    HStack,
-    Wrap,
-    WrapItem,
-    FormControl,
-    FormLabel,
-    Input,
-    InputGroup,
-    InputLeftElement,
-    Textarea,
-    Link,
-  } from '@chakra-ui/react';
-  import {
-    MdPhone,
-    MdEmail,
-    MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail,
-  } from 'react-icons/md';
-  import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
-import { ImLinkedin } from 'react-icons/im';
-import { HiOutlineMail } from 'react-icons/hi';
-import { FaGithub } from 'react-icons/fa';
-  
-  export default function Contact() {
-    return (
-      <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
-        <Flex>
+  FormControl,
+  PhoneIcon
+} from '@chakra-ui/react'
+
+const Contact = () => {
+  return (
+    <Box id="contact" marginTop={{ base: "30px", md: "20px", lg: "60px" }} mb={"20px"}>
+      <Box
+        padding="30px"
+        height="450px"
+        mb={["150px", "160px", "0px", "0px", "0px"]}
+
+      >
+        <Box w="max-content" align="center" className="heading-hover" margin={'auto'} mb='20px'>
+          <Text
+            className="about-H"
+            fontSize={["2xl", "2xl", "3xl", "4xl"]}
+            as="b"
+            fontWeight='extrabold'
+          >
+            Contact Me
+          </Text>
+
+        </Box>
+
+        <SimpleGrid
+          //  border="1px solid red"
+          //  spacing={5}
+          // columns={{ sm: 1, md: 2, lg: 2}}
+          className="form"
+          columns={2} spacing={10}
+
+        >
           <Box
-            bg="#02054B"
-            color="white"
-            borderRadius="lg"
-            m={{ sm: 4, md: 16, lg: 10 }}
-            p={{ sm: 5, md: 5, lg: 16 }}
-            
+            // border="1px solid green" 
+            margin="auto"
+            fontSize="large"
+            fontWeight="600"
+            display="grid"
+            justifyContent="center"
+            alignItems="center"
+            height="250px"
+            w="400px"
+            className="contact"
+            marginEnd="-0.5"
+          >
+            <Box
+              as="b"
+              fontSize="25px"
+              display="flex"
+              justifyContent="left"
+              alignItems="center"
+              gap="6px"
             >
-            <Box p={4}>
-              <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
-                <WrapItem>
-                  <Box>
-                    <Heading>Contact</Heading>
-                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                      Fill up the form below to contact
-                    </Text>
-                    <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                      <VStack pl={0} spacing={3} alignItems="flex-start">
-                        <Button
-                          size="md"
-                          id="contact-phone"
-                          height="48px"
-                          variant="ghost"
-                          color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                          +91-7057989633
-                        </Button>
-                        <Button
-                          size="md"
-                          height="48px"
-                          variant="ghost"
-                          color="#DCE2FF"
-                          id="contact-email"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                          poojachavan8669@gmail.com
-                        </Button>
-                        <Button
-                          size="md"
-                          height="48px"
-                          variant="ghost"
-                          color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                          Maharashtra, India
-                        </Button>
-                      </VStack>
-                    </Box>
-                    <HStack
-                      mt={{ lg: 10, md: 10 }}
-                      spacing={5}
-                      px={5}
-                      alignItems="flex-start">
-                        <Link id="contact-linkedin" href='' isExternal>
-                          <ImLinkedin fontSize={"1.6rem"} />
-                        </Link>
-                        <Link id="contact-github" href="" isExternal>
-                          <FaGithub fontSize={"1.6rem"} />
-                        </Link>
-                        <Link  id="contact-email" href="" isExternal>
-                          <HiOutlineMail fontSize={"1.6rem"} />
-                        </Link>
-                    </HStack>
+              <FaHome />
+              <Text as="b" fontSize={["sm", "lg", "xl", "xl"]}>
+                Mumbai,Maharashtra,India
+              </Text>
+            </Box>
+            <a href="poojachavan8669@gmail.com">
+              <Box
+                id="contact-email"
+                as="b"
+                fontSize="25px"
+                display="flex"
+                justifyContent="left"
+                alignItems="center"
+                gap="6px"
+              >
+                {" "}
+                <MdAttachEmail />
+                <Text as="b" fontSize={["sm", "lg", "xl", "xl"]}>
+                  poojachavan8669@gmail.com
+                </Text>
+              </Box>
+            </a>
+            <Box
+              id="contact-github"
+              as="b"
+              fontSize="25px"
+              display="flex"
+              justifyContent="left"
+              alignItems="center"
+              gap="6px"
+            >
+              <BsGithub />{" "}
+              <a href="https://github.com/PoojaRathod5" target="_blank"
+                rel="noreferrer">
+                <Text as="b" fontSize={["sm", "lg", "xl", "xl"]}>
+                  Github
+                </Text>
+              </a>
+            </Box>
+            <Box
+              id="contact-phone"
+              as="b"
+              fontSize="25px"
+              display="flex"
+              justifyContent="left"
+              alignItems="center"
+              gap="6px"
+            >
+              <BsFillTelephoneFill />{" "}
+              <a href="tel:7057989633">
+                <Text as="b" fontSize={["sm", "lg", "xl", "xl"]}>
+                  7057989633
+                </Text>
+              </a>
+            </Box>
+            <a
+              href="https://www.linkedin.com/in/pooja-rathod-9a133323b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Box
+                id="contact-linkedin"
+                as="b"
+                fontSize="25px"
+                display="flex"
+                justifyContent="left"
+                alignItems="center"
+                gap="6px"
+              >
+                <ImLinkedin />
+                <Text as="b" fontSize={["sm", "lg", "xl", "xl"]}>
+                  Pooja Rathod
+                </Text>
+              </Box>
+            </a>
+          </Box>
+          <Box
+            alignItems="center"
+          >
+            <Box className="contact-form" w="400px" padding="10px" h="200px" >
+              <FormControl action="https://formspree.io/f/xpzezbvk" method="POST">
+                <Input type="email" name="phone" placeholder="E-MAIL" />
+                <br></br>
+                <br></br>
+                <Input type="number" variant='outline' name="phone" placeholder="Phone Number" />
+                <br></br>
+                <br></br>
+                <Input
+
+                  type="message"
+                  className="message"
+                  placeholder="Please enter your messages..."
+                ></Input>
+                <br></br>
+                <br></br>
+                <button type="submit">
+                  <Box
+                    gap="10px"
+                    display="flex"
+                    justifyContent="space-between"
+                    alignItems="center"
+                    align='left'
+                    w='100%'
+                    marginLeft="5px"
+                    backgroundColor="teal"
+                    borderRadius="5px"
+                  >
+
+                    <Text as="b" padding="4px"> Send</Text>
+                    <RiMailSendFill />
                   </Box>
-                </WrapItem>
-                <WrapItem>
-                  <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
-                      <VStack spacing={5}>
-                        <FormControl id="name">
-                          <FormLabel>Your Name</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<BsPerson color="gray.800" />}
-                            />
-                            <Input  type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<MdOutlineEmail color="gray.800" />}
-                            />
-                            <Input  type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
-                          <Textarea 
-                            borderColor="gray.300"
-                            _hover={{
-                              borderRadius: 'gray.300',
-                            }}
-                            placeholder="message"
-                          />
-                        </FormControl>
-                        <FormControl id="name" float="right">
-                          <Button
-                            variant="solid"
-                            bg="#0D74FF"
-                            color="white"
-                            _hover={{}}>
-                            Send Message
-                          </Button>
-                        </FormControl>
-                      </VStack>
-                    </Box>
-                  </Box>
-                </WrapItem>
-              </Wrap>
+
+                </button>
+              </FormControl>
             </Box>
           </Box>
-        </Flex>
-      </Container>
-    );
-  }
+        </SimpleGrid>
+      </Box>
+    </Box>
+  );
+};
+
+export default Contact;

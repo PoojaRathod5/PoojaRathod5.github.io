@@ -1,5 +1,4 @@
-
-import { Box } from '@chakra-ui/react';
+import { Box, useBreakpointValue } from '@chakra-ui/react';
 import './App.css';
 import About from './Components/About';
 import Contact from './Components/Contact';
@@ -8,22 +7,23 @@ import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
+
 function App() {
+  const isSmallScreen = useBreakpointValue({ base: true, lg: false });
+
   return (
-    <>
-    <Box maxW={"100vw"}>
+    <Box maxW="100vw">
       <Navbar />
-      <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
+      <Box maxWidth={isSmallScreen ? "100vw" : "90vw"} margin="auto">
         <Home />
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Github/>
+        <About />
+        <Skills />
+        <Projects />
+        <Github />
       </Box>
-      <Contact/>
+      <Contact />
     </Box>
-    </>
-  );
+  )
 }
 
 export default App;
