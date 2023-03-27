@@ -126,34 +126,30 @@ const Navbar = () => {
               contact
             </Link>
             <Button
-              width="max-content"
-              colorScheme={"teal"}
               id="resume-button-1"
               className="nav-link resume"
-              onClick={() => {
-                window.open(
-                  "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
-                  "_blank"
-                );
-                const link = document.createElement("a");
-                link.setAttribute("id", "resume-link-1");
-                link.href = Pooja_Rathod_Resume;
-                link.download = "Pooja_Rathod_Resume.pdf";
-                link.click();
+              as={"a"}
+              display={{ base: "none", md: "inline-flex" }}
+              width="max-content"
+              colorScheme={"teal"}
+              href={"#"}
+              _hover={{
+                bg: "blue.600",
               }}
             >
-              {/* <a
+              <Link
                 id="resume-link-1"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing"
+                  )
+                }
                 href={Pooja_Rathod_Resume}
-                target="_blank"
-                download="Pooja_Rathod_Resume.pdf"
-              > */}
-              Resume
-              {/* </a> */}
-              <Text as="span" ml={"2"}>
-                <AiOutlineDownload fontSize={"1.2rem"} />
-              </Text>
+                target={"_blank"}
+                download
+              >Resume</Link>
             </Button>
+
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
