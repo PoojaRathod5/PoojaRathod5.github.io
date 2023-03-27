@@ -43,7 +43,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               onClick={() => setTitle("Home")}
-            //className="nav-link home"
+              //className="nav-link home"
             >
               <Image
                 src={

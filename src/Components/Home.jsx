@@ -76,7 +76,7 @@ const Home = () => {
               width="max-content"
               colorScheme={"teal"}
               id="resume-button-2"
-              className="nav-link resume"
+              //className="nav-link resume"
               onClick={() => {
                 window.open(
                   "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
