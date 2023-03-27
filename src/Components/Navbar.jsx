@@ -43,7 +43,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               onClick={() => setTitle("Home")}
-              //className="nav-link home"
+            //className="nav-link home"
             >
               <Image
                 src={
@@ -147,7 +147,8 @@ const Navbar = () => {
                 href={Pooja_Rathod_Resume}
                 target={"_blank"}
                 download
-              >Resume</Link>
+              >
+                Resume</Link>
             </Button>
 
             <Button onClick={toggleColorMode}>
