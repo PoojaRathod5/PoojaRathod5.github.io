@@ -72,7 +72,7 @@ const Home = () => {
             Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS.
           </Text>
           <Flex gap={"8"} align="center">
-            <Button
+            {/* <Button
               width="max-content"
               colorScheme={"teal"}
               id="resume-button-2"
@@ -89,18 +89,35 @@ const Home = () => {
                 link.click();
               }}
             >
-              {/* <a
-                id="resume-link-1"
-                href={Pooja_Rathod_Resume}
-                target="_blank"
-                download="Pooja_Rathod_Resume.pdf"
-              > */}
               Resume
-              {/* </a> */}
               <Text as="span" ml={"2"}>
                 <AiOutlineDownload fontSize={"1.2rem"} />
               </Text>
+            </Button> */}
+            <Button
+              id="resume-button-2"
+              as={"a"}
+              display={{ base: "none", md: "inline-flex" }}
+              width="max-content"
+              colorScheme={"teal"}
+              href={"#"}
+              _hover={{
+                bg: "blue.600",
+              }}
+            >
+              <Link
+                id="resume-link-2"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing"
+                  )
+                }
+                href={Pooja_Rathod_Resume}
+                target={"_blank"}
+                download
+              >Resume</Link>
             </Button>
+
             <Flex gap="3">
               <Link id="contact-linkedin" href='https://www.linkedin.com/in/pooja-rathod-9a133323b/' isExternal>
                 <ImLinkedin fontSize={"1.6rem"} />
