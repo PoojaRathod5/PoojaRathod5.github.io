@@ -14,20 +14,22 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
 import { useScrollPosition } from "react-use-scroll-position";
+import myImage from "../assets/profile.jpg"
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [title, setTitle] = useState("Home");
-  
+
 
   return (
     <>
       <div>
         <Helmet>
+          <meta property="og:image" content="https://i.ibb.co/fpc2Vts/2023-02-19-15-21-29-627.jpg"></meta>
           <title>{`Pooja Rathod | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" zIndex="9999"  pos={"fixed"} top="0" left = "0" right = "0" textTransform={"capitalize"} background="#b0bec5"   >
+      <Box id="nav-menu" zIndex="9999" pos={"fixed"} top="0" left="0" right="0" textTransform={"capitalize"} background="#b0bec5"   >
         <Flex
           justify={"space-between"}
           height="4rem"
@@ -60,9 +62,9 @@ const Navbar = () => {
             justify="space-around"
             align={"center"}
             marginRight="2rem"
-            //border="1px solid red"
+          //border="1px solid red"
           >
-            <Link 
+            <Link
               to="home"
               spy={true}
               smooth={true}
@@ -70,11 +72,11 @@ const Navbar = () => {
               onClick={() => setTitle("Home")}
               activeClass="active"
               className="nav-link home"
-              // onClick={() => setTitle("Home")} href="#home" className="nav-link home"
+            // onClick={() => setTitle("Home")} href="#home" className="nav-link home"
             >
               home
             </Link>
-            <Link 
+            <Link
               to="about"
               spy={true}
               smooth={true}
@@ -82,11 +84,11 @@ const Navbar = () => {
               onClick={() => setTitle("About")}
               activeClass="active"
               className="nav-link about"
-              //onClick={() => setTitle("About")} href="#about" className="nav-link about" 
-              >
+            //onClick={() => setTitle("About")} href="#about" className="nav-link about" 
+            >
               about
             </Link>
-            <Link 
+            <Link
               to="skills"
               spy={true}
               smooth={true}
@@ -94,11 +96,11 @@ const Navbar = () => {
               onClick={() => setTitle("Skills")}
               activeClass="active"
               className="nav-link skills"
-              //onClick={() => setTitle("Skills")} href="#skills" className="nav-link skills"
+            //onClick={() => setTitle("Skills")} href="#skills" className="nav-link skills"
             >
               skills
             </Link>
-            <Link 
+            <Link
               to="projects"
               spy={true}
               smooth={true}
@@ -106,11 +108,11 @@ const Navbar = () => {
               onClick={() => setTitle("Projects")}
               activeClass="active"
               className="nav-link projects"
-              //onClick={() => setTitle("Projects")} href="#projects" className="nav-link projects"
-              >
+            //onClick={() => setTitle("Projects")} href="#projects" className="nav-link projects"
+            >
               projects
             </Link>
-            <Link 
+            <Link
               to="contact"
               spy={true}
               smooth={true}
@@ -118,7 +120,7 @@ const Navbar = () => {
               onClick={() => setTitle("Contact")}
               activeClass="active"
               className="nav-link contact"
-              //onClick={() => setTitle("Contact")} href="#contact" className="nav-link contact"
+            //onClick={() => setTitle("Contact")} href="#contact" className="nav-link contact"
             >
               contact
             </Link>
@@ -126,14 +128,14 @@ const Navbar = () => {
               width="max-content"
               colorScheme={"teal"}
               id="resume-button-1"
-              className="nav-link resume"
+              //className="nav-link resume"
               onClick={() => {
                 window.open(
                   "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing",
                   "_blank"
                 );
                 const link = document.createElement("a");
-                link.setAttribute("id","resume-link-1");
+                link.setAttribute("id", "resume-link-1");
                 link.href = Pooja_Rathod_Resume;
                 link.download = "Pooja_Rathod_Resume.pdf";
                 link.click();
@@ -145,7 +147,7 @@ const Navbar = () => {
                 target="_blank"
                 download="Pooja_Rathod_Resume.pdf"
               > */}
-                Resume
+              Resume
               {/* </a> */}
               <Text as="span" ml={"2"}>
                 <AiOutlineDownload fontSize={"1.2rem"} />
