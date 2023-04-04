@@ -47,18 +47,9 @@ const Projects = () => {
       github: "https://github.com/PoojaRathod5/NetMeds-Clone",
       demo: "https://netmed-lokesh-alok-ashish-akash-pooja.netlify.app/"
     },
+    
     {
       id: 5,
-
-      name: "Farfetch ",
-      description: "The World's Best Fashion Edits, Catered To Your Individual Style. Only On FARFETCH . Express Shipping. Daily New-In Edits.",
-      image: "https://i.ibb.co/fMDz4dt/Farfetch.png",
-      techStack: ["HTML", "CSS", "Javascript"],
-      github: "https://github.com/PoojaRathod5/animated-governor-4742",
-      demo: "https://tubular-semifreddo-2ed46b.netlify.app/"
-    },
-    {
-      id: 6,
 
       name: "TimeCamp ",
       description: "TimeCamp is centralized automated system that makes it easy for teams to work on all aspects of their programs and projects",
