@@ -20,7 +20,7 @@ const Contact = () => {
         mb={["150px", "160px", "0px", "0px", "0px"]}
 
       >
-        <Box w="max-content" align="center" className="heading-hover" margin={'auto'} mb='20px'>
+        <Box w="max-content" align="center" className="heading-hover" margin={'auto'} >
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}

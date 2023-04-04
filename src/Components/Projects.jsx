@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
 
       name: "Netmeds Clone",
-      description: "It is my first project",
+      description: "Clone of NetMeds.com . it has making healthcare accessible and affordable to all,",
       image: "https://i.ibb.co/hs2Pr4r/netmeds.png",
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/PoojaRathod5/NetMeds-Clone",
@@ -20,7 +20,7 @@ const Projects = () => {
       id: 2,
 
       name: "Infinity Jewellers",
-      description: "It is my react project",
+      description: "This is the clone of caratlane website which has a data of different type jwellary products.",
       image: "https://i.ibb.co/J3HBznH/Cartlane.png",
       techStack: ["CSS", "React", "Redux-thunk", "Redux"],
       github: "https://github.com/PoojaRathod5/new-bucket-3441",
@@ -31,7 +31,7 @@ const Projects = () => {
       id: 3,
 
       name: "TimeCamp Clone",
-      description: "It is my javasript project",
+      description: "TimeCamp is centralized automated system that makes it easy for teams to work on all aspects of their programs and projects to ensure efficiency and productivity.",
       image: "https://i.ibb.co/jgCFshg/Screenshot-528.png",
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/MrVivek30/violet-support-6758",
@@ -42,7 +42,7 @@ const Projects = () => {
       id: 4,
 
       name: "Paytmmall Clone",
-      description: "It is my React project",
+      description: "Universal Mall - World's Leading Online Shopping Experience. Online shopping &convenient and trouble-free.",
       image: "https://i.ibb.co/Mf410yR/Screenshot-542.png",
       techStack: ["HTML", "CSS", "React"],
       github: "https://github.com/PoojaRathod5/assorted-dinner-745",

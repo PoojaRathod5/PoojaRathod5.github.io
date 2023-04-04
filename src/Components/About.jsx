@@ -8,6 +8,7 @@ const About = () => {
       id="about"
       className="about section"
       padding={{ base: "20px", md: "40px" }}
+  
     >
       <Text 
         fontSize={{ base: "2xl", md: "4xl" }} 
