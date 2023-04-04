@@ -9,7 +9,7 @@ import { Element } from "react-scroll";
 const Skills = () => {
   var settings = {
     infinite: true,
-    slidesToShow: 8,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     speed: 6000,
@@ -21,7 +21,7 @@ const Skills = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 6,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -29,7 +29,7 @@ const Skills = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 5,
           slidesToScroll6: 1,
           initialSlide: 2,
         },
@@ -46,7 +46,7 @@ const Skills = () => {
 
   var settings1 = {
     infinite: true,
-    slidesToShow: 8,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     speed: 6000,
@@ -57,7 +57,7 @@ const Skills = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 6,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -65,7 +65,7 @@ const Skills = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 5,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -169,7 +169,7 @@ const Skills = () => {
     },
   ];
   return (
-    <>
+    <Box marginTop="10rem">
       <Element name="skills" className="element">
         <Text
           fontSize="4xl"
@@ -191,6 +191,7 @@ const Skills = () => {
                     textAlign={"center"}
                     padding={{ base: "10px", md: "20px", lg: "40px" }}
                     height="auto"
+                    w="100%"
                     className="skills-card"
                   >
                     <Image className="skills-card-img" src={el.image} />
@@ -221,7 +222,7 @@ const Skills = () => {
           </Box>
         </Box>
       </Element>
-    </>
+    </Box>
   );
 };
 

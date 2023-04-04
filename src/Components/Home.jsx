@@ -27,18 +27,21 @@ const Home = () => {
         maxHeight={"750px"}
         className="background"
         id="home"
-        flexDir={{ base: "column-reverse", lg: "row" }}
+        flexDir={{ base: "column-reverse", lg: "row"}}
         align={"center"}
         justify="center"
-        gap={{ base: "20", md: "20", lg: "20" }}
-      // border="2px solid red"
+        gap={{ base: "5", md: "10", lg: "20" }}
+        marginTop="3rem"
+        // border="2px solid red"
+        
       >
 
         <Box
-          height={{ base: "300px", md: "400px", lg: "500px" }}
+          maxHeight={{ base: "70%", md: "40%", lg: "70%",sm:"75%" }}
           overflow="hidden"
           className="profile"
           boxShadow='md' p='4' rounded='md' bg='grey'
+          // border="1px solid red"
         >
           <Image
             src="https://media4.giphy.com/media/xT0Gqn9yuw8hnPGn5K/giphy.gif?cid=ecf05e47yjr3mk2niripgp86zdxf5ehblsq0ki9p44fez000&rid=giphy.gif&ct=g"
@@ -51,6 +54,7 @@ const Home = () => {
           maxWidth={{ base: "100%", lg: "40%" }}
           flexDir="column"
           gap="1rem"
+          marginTop={{base:"1rem",md:"1rem",sm:"5rem"}}
           padding={"5px"}
         >
           <Heading style={{ paddingBottom: 5 }} className="heading">
