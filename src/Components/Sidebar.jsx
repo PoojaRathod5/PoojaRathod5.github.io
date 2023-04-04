@@ -25,6 +25,7 @@ const Sidebar = () => {
           <Box borderBottomWidth='1px' display={"flex"} justifyContent={"space-between"}  padding={"10px"}>
           <Button
               width="max-content"
+              
               colorScheme={"teal"}
               id="resume-button-1"
               className="nav-link resume"
