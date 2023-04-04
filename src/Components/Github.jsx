@@ -7,7 +7,7 @@ const Github = () => {
     <>
      <Heading marginTop="30px" mb="2rem" textAlign={"center"}>Github Stats</Heading>
      <Box>
-        <Box width="870px" margin="auto" marginBottom="30px">
+        <Box   width={["330px", "450px", "870px"]} margin="auto" marginBottom="30px">
         <GitHubCalendar
             username="PoojaRathod5"
             className="react-activity-calendar"

@@ -12,9 +12,9 @@ function App() {
   const isSmallScreen = useBreakpointValue({ base: true, lg: false });
 
   return (
-    <Box maxW="100vw">
+    <Box maxW="100vw" margin="auto">
       <Navbar />
-      <Box maxWidth={isSmallScreen ? "100vw" : "90vw"} margin="auto">
+      <Box maxWidth={isSmallScreen ? "90vw" : "80vw"} margin="auto">
         <Home />
         <About />
         <Skills />

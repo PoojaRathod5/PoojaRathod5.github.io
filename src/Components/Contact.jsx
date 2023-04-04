@@ -140,7 +140,7 @@ const Contact = () => {
           <Box
             alignItems="center"
           >
-            <Box className="contact-form" w="400px" padding="10px" h="200px" >
+            <Box className="contact-form" w="400px" padding="10px" h="200px"  mb={["150px", "160px", "0px", "0px", "0px"]} >
               <FormControl action="https://formspree.io/f/xpzezbvk" method="POST">
                 <Input type="email" name="phone" placeholder="E-MAIL" />
                 <br></br>
