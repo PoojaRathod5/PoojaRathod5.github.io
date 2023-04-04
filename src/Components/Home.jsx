@@ -21,7 +21,10 @@ import Pooja_Rathod_Resume from "../assets/Pooja_Rathod_Resume.pdf"
 
 const Home = () => {
   return (
-    <>
+    <Box
+    // border="1px solid red"
+   
+    >
       <Flex
         height={{ base: "80vh", lg: "100vh" }}
         maxHeight={"750px"}
@@ -31,7 +34,7 @@ const Home = () => {
         align={"center"}
         justify="center"
         gap={{ base: "5", md: "10", lg: "20" }}
-        marginTop="3rem"
+        marginTop="2rem"
         // border="2px solid red"
         
       >
@@ -113,7 +116,7 @@ const Home = () => {
                 id="resume-link-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1rOjZru0azTqSzZTzFyWgie_jkw-hRkGz/view?usp=sharing"
+                    "https://drive.google.com/file/d/1aVXzrrXNHy4DyUnj4UgDNklnEyUfmxrh/view?usp=sharing"
                   )
                 }
                 href={Pooja_Rathod_Resume}
@@ -146,7 +149,7 @@ const Home = () => {
           </Box>
         </Flex>
       </Flex>
-    </>
+    </Box>
   );
 };
 

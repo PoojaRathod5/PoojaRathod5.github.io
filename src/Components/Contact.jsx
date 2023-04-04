@@ -13,7 +13,7 @@ import {
 
 const Contact = () => {
   return (
-    <Box id="contact" w="90%" mt={{ base: "30px", md: "20px", lg: "60px" }} mb={{ base: "20px", md: "30px", lg: "60px" }}>
+    <Box id="contact" w="90%" margin="auto" mt={{ base: "30px", md: "20px", lg: "60px" }} mb={{ base: "20px", md: "30px", lg: "60px" }}>
   <Box
     padding={{ base: "20px", md: "30px" }}
     height={{ base: "auto", md: "450px" }}
@@ -24,6 +24,7 @@ const Contact = () => {
         className="about-H"
         fontSize={{ base: "xl", md: "2xl" }}
         fontWeight="extrabold"
+        marginRight="180px"
       >
         Contact Me
       </Text>
@@ -50,7 +51,7 @@ const Contact = () => {
           display="flex"
           justifyContent="left"
           alignItems="center"
-          gap="6px"
+          gap="3px"
         >
           <FaHome />
           <Text as="b" >

@@ -20,9 +20,11 @@ const About = () => {
     <Box
       id="about"
       className="about section"
-      marginTop="5rem"
+      marginTop="2rem"
       padding={{ base: "20px", md: "40px" }}
       // border="1px solid red"
+      marginBottom={{base:"3rem",md:"8rem",sm:"10rem"}}
+      
     >
 
       <Text

@@ -20,7 +20,7 @@ const Projects = () => {
     {
       id: 2,
 
-      name: "Paytmmall Clone",
+      name: "Universal mall",
       description: "Universal Mall - World's Leading Online Shopping Experience. Online shopping &convenient and trouble-free.",
       image: "https://i.ibb.co/Mf410yR/Screenshot-542.png",
       techStack: ["Chakra UI", "React", "Redux-thunk", "Redux"],
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       id: 4,
 
-      name: "Netmeds Clone",
+      name: "Netmeds ",
       description: "Clone of NetMeds.com . It is a trusted Indian online pharmacy. Order prescription/OTC medicines online.",
       image: "https://i.ibb.co/hs2Pr4r/netmeds.png",
       techStack: ["HTML", "CSS", "Javascript"],
@@ -50,7 +50,7 @@ const Projects = () => {
     {
       id: 5,
 
-      name: "Farfetch Clone",
+      name: "Farfetch ",
       description: "The World's Best Fashion Edits, Catered To Your Individual Style. Only On FARFETCH®.Express Shipping. Daily New-In Edits.",
       image: "https://i.ibb.co/fMDz4dt/Farfetch.png",
       techStack: ["HTML", "CSS", "Javascript"],
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       id: 6,
 
-      name: "TimeCamp Clone",
+      name: "TimeCamp ",
       description: "TimeCamp is centralized automated system that makes it easy for teams to work on all aspects of their programs and projects",
       image: "https://i.ibb.co/jgCFshg/Screenshot-528.png",
       techStack: ["HTML", "CSS", "Javascript"],

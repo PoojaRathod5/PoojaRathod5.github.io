@@ -169,14 +169,16 @@ const Skills = () => {
     },
   ];
   return (
-    <Box marginTop="10rem">
+    <Box marginTop="5rem" 
+    >
+    
       <Element name="skills" className="element">
         <Text
           fontSize="4xl"
           fontWeight="600"
           margin="auto"
           textAlign="center"
-          marginTop={{ base: "30px", md: "20px", lg: "60px" }}
+          marginTop={{ base: "50px", md: "20px", lg: "80px" }}
         >
           Tech Stacks
         </Text>
