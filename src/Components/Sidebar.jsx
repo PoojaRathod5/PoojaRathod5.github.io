@@ -1,4 +1,4 @@
-import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Text, useColorMode ,Link, Image} from '@chakra-ui/react';
+import { Box, Button, Drawer, DrawerBody, DrawerContent,  DrawerOverlay, Text, useColorMode ,Link} from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useDisclosure } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -11,7 +11,7 @@ const Sidebar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
     const [title, setTitle] = useState("Home");
-    const navigate = useNavigate();
+    
   return (
     <>
     <Button onClick={toggleColorMode} marginRight={"10px"}>
@@ -25,7 +25,7 @@ const Sidebar = () => {
           <Box borderBottomWidth='1px' display={"flex"} justifyContent={"space-between"}  padding={"10px"}>
           <Button
               width="max-content"
-              
+
               colorScheme={"teal"}
               id="resume-button-1"
               className="nav-link resume"

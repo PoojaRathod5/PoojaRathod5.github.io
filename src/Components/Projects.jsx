@@ -1,4 +1,4 @@
-import { Badge, Box, Button, Image, Link, Text, background } from '@chakra-ui/react'
+import { Badge, Box, Button, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { AiOutlineDownload } from 'react-icons/ai'
 
@@ -21,7 +21,7 @@ const Projects = () => {
       id: 2,
 
       name: "Universal mall",
-      description: "Universal Mall - World's Leading Online Shopping Experience. Online shopping &convenient and trouble-free.",
+      description: "Universal Mall - World's Leading Online Shopping Experience. Online shopping & convenient and trouble-free.",
       image: "https://i.ibb.co/Mf410yR/Screenshot-542.png",
       techStack: ["Chakra UI", "React", "Redux-thunk", "Redux"],
       github: "https://github.com/PoojaRathod5/assorted-dinner-745",
@@ -51,7 +51,7 @@ const Projects = () => {
       id: 5,
 
       name: "Farfetch ",
-      description: "The World's Best Fashion Edits, Catered To Your Individual Style. Only On FARFETCH®.Express Shipping. Daily New-In Edits.",
+      description: "The World's Best Fashion Edits, Catered To Your Individual Style. Only On FARFETCH . Express Shipping. Daily New-In Edits.",
       image: "https://i.ibb.co/fMDz4dt/Farfetch.png",
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/PoojaRathod5/animated-governor-4742",
