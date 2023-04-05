@@ -23,28 +23,28 @@ const Home = () => {
   return (
     <Box
     // border="1px solid red"
-   
+
     >
       <Flex
         height={{ base: "80vh", lg: "100vh" }}
         maxHeight={"750px"}
         className="background"
         id="home"
-        flexDir={{ base: "column-reverse", lg: "row"}}
+        flexDir={{ base: "column-reverse", lg: "row" }}
         align={"center"}
         justify="center"
         gap={{ base: "5", md: "10", lg: "20" }}
         marginTop="2rem"
-        // border="2px solid red"
-        
+      // border="2px solid red"
+
       >
 
         <Box
-          maxHeight={{ base: "70%", md: "40%", lg: "70%",sm:"75%" }}
+          maxHeight={{ base: "70%", md: "40%", lg: "70%", sm: "75%" }}
           overflow="hidden"
           className="profile"
           boxShadow='md' p='4' rounded='md' bg='grey'
-          // border="1px solid red"
+        // border="1px solid red"
         >
           <Image
             src="https://media4.giphy.com/media/xT0Gqn9yuw8hnPGn5K/giphy.gif?cid=ecf05e47yjr3mk2niripgp86zdxf5ehblsq0ki9p44fez000&rid=giphy.gif&ct=g"
@@ -57,7 +57,7 @@ const Home = () => {
           maxWidth={{ base: "100%", lg: "40%" }}
           flexDir="column"
           gap="1rem"
-          marginTop={{base:"1rem",md:"1rem",sm:"5rem"}}
+          marginTop={{ base: "1rem", md: "1rem", sm: "5rem" }}
           padding={"5px"}
         >
           <Heading style={{ paddingBottom: 5 }} className="heading">
@@ -116,7 +116,7 @@ const Home = () => {
                 id="resume-link-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1aVXzrrXNHy4DyUnj4UgDNklnEyUfmxrh/view?usp=sharing"
+                    "https://drive.google.com/file/d/1lPrcuiRU_rqWCkYztIg2Tk-iexKleu0c/view?usp=share_link"
                   )
                 }
                 href={Pooja_Rathod_Resume}

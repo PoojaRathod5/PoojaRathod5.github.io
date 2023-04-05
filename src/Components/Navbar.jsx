@@ -27,7 +27,7 @@ const Navbar = () => {
           <title>{`Pooja Rathod | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" pos={{ base: "sticky", md: "sticky" ,sm:"fixed"}} zIndex="7" textTransform={"capitalize"}
+      <Box id="nav-menu" pos={{ base: "sticky", md: "sticky", sm: "fixed" }} zIndex="7" textTransform={"capitalize"}
         top="0" left="0" right="0"
         background={colorMode === "light" ? "#b0bec5" : "black"}
       >
@@ -67,7 +67,7 @@ const Navbar = () => {
               home
             </Link>
             <Link
-            
+
               onClick={() => setTitle("About")}
               href="#about"
               className="nav-link about"
@@ -102,7 +102,7 @@ const Navbar = () => {
               className="nav-link resume"
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1aVXzrrXNHy4DyUnj4UgDNklnEyUfmxrh/view?usp=sharing",
+                  "https://drive.google.com/file/d/1lPrcuiRU_rqWCkYztIg2Tk-iexKleu0c/view?usp=share_link",
                   "_blank"
                 );
               }}
