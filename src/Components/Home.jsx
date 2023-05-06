@@ -116,7 +116,7 @@ const Home = () => {
                 id="resume-link-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1lPrcuiRU_rqWCkYztIg2Tk-iexKleu0c/view?usp=share_link"
+                    "https://drive.google.com/file/d/155bn9yvDFFnbO9vWU081QMqRp5lFe2Q3/view?usp=sharing"
                   )
                 }
                 href={Pooja_Rathod_Resume}
